@@ -10,7 +10,7 @@ const App = () => {
 
     axios.get('https://dummyjson.com/products')
       .then(data => setData({ ...data.data }))
-      .catch(err => console.log(err))
+      .catch(err => console.log(err.message))
 
   }, [])
 
